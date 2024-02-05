@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mp0224</groupId>
+    <artifactId>rental</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>mp0224.rental</name>
+
+    <scm>
+        <connection>scm:https://git-codecommit.us-east-1.amazonaws.com/v1/repos/mp0224</connection>
+        <developerConnection>scm:https://git-codecommit.us-east-1.amazonaws.com/v1/repos/mp0224</developerConnection>
+    </scm>
+
+    <modules>
+        <module>core</module>
+        <module>tool</module>
+        <module>tool.inline</module>
+        <module>price</module>
+        <module>price.inline</module>
+        <module>agreement</module>
+        <module>agreement.inline</module>
+        <module>module</module>
+        <module>application</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <junit.jupiter.version>5.7.2</junit.jupiter.version>
+        <maven.surefire.version>2.22.2</maven.surefire.version>
+        <maven.failsafe.version>2.22.2</maven.failsafe.version>
+    </properties>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>  <!--or <release>10</release>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
